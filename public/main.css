@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+#sobre {
+    background-color: #0a325c;
+    border-radius: 12px;
+    max-width: 520px;
+    min-width: 320px;
+    margin-left: 2rem;
+    padding: 14px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+@media screen and (max-width: 475px) {
+    #sobre {
+        margin-top: 1.5rem;
+        font-size: larger;
+    }
+
+    #habilidades {
+        font-size: large;
+}
+}
+
+article {
+    background-color: #0a325c;
+    border-radius: 12px;
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    max-width: 480px;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    max-width: 980px;
+    align-items: center;
+    justify-content: center;
+}
+
+main p, main li  {
+    font-size: 1.1em;
+}
+
+#habilidades li{
+    padding-bottom: 0.75rem;
+}
+
+#habilidades.git {
+    padding-bottom: 0;
+}
+
+#habilidades h2 {
+    margin-bottom: 1rem;
+}
+
+#habilidades {
+    padding: 3.1rem;
+    padding-block: 0.75rem;
+    background-color: #224090;
+    border-radius: 12px;
+    margin: 1rem;
+    max-width: 420px;
+    min-width: 144px;
+}
+
+li.html {
+    list-style-image:url(../svg/SVG/css3.svg);
+}
+li.tail {
+    list-style-image:url(../svg/SVG/tumblr2.svg);
+}
+li.react {
+    list-style-image:url(../svg/SVG/embed2.svg);
+}
+li.TypeScript {
+    list-style-image:url(../svg/SVG/tumblr.svg);
+}
+li.NextJS {
+    list-style-image:url(../svg/SVG/delicious.svg);
+}
+li.Node {
+    list-style-image:url(../svg/SVG/codepen.svg);
+}
+li.Express {
+    list-style-image:url(../svg/SVG/terminal.svg);
+}
+li.SQLite {
+    list-style-image:url(../svg/SVG/stackoverflow.svg);
+}
+li.jsPDF {
+    list-style-image:url(../svg/SVG/file-text2.svg);
+}
+li.Prisma {
+    list-style-image:url(../svg/SVG/stats-dots.svg);
+}
+li.git {
+    list-style-image:url(../svg/SVG/github.svg);
+}

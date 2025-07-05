@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Matheus Diedrichs</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+
+    <img class="header__logo"  src="Matheus-Dark.png" alt="Foto de Matheus" class="header__logo" />
+
+    <h1>Matheus Diedrichs</h1>
+    <p>Transformando ideias em soluções digitais</p>
+    
+    <!-- Menu de Navegação -->
+    <nav>
+      <ul class="nav__ul">
+        <li><a class="nav__a" href="#sobre">Sobre mim</a></li>
+        <li><a class="nav__a" href="#habilidades">Habilidades</a></li>
+        <li><a class="nav__a" href="#projetos">Projetos</a></li>
+        <li><a class="nav__a" href="#contato">Contato</a></li>
+        <li><a class="nav__a" href="#extras">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <section id="sobre">
+      <h2>⚡ Sobre mim</h2>
+      <p>Sou um desenvolvedor web focado em criar sites que ajudam empresas a se destacarem no digital. Gosto de trabalhar com projetos enxutos, objetivos e com foco em resultados.</p>
+    </section>
+
+
+
+
+  <!-- Corpo Principal -->
+  <main>
+    <!-- Sobre mim -->
+
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li class="html">HTML5, CSS3</li>
+        <li class="tail">Tailwind</li>
+        <li class="react">React</li>
+        <li class="TypeScript">TypeScript</li>
+        <li class="NextJS">NextJS</li>
+        <li class="Node">Node.js</li>
+        <li class="Express">Express</li>
+        <li class="SQLite">SQLite</li>
+        <li class="Prisma">Prisma ORM</li>
+        <li class="jsPDF">jsPDF</li>
+        <li class="git">Version Control</li>
+      </ul>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <article onclick="ProjectOpenClients()">
+        <h3>🔗 Sistema de Propostas em PDF</h3>
+        <p>Aplicação SaaS onde o usuário cadastra clientes, cria propostas e gera PDFs automaticamente.</p>
+        <a> <li>💻 JavaScript <li> 🏧 LocalStorage</a>
+      </article>
+
+      <article onclick="OpenBeProject()">
+        <h3>🔗 Landing Page para Página NFT</h3>
+        <p>Site responsivo para apresentação de um designer, site passado de Figma para código.</p>
+        <a><li>Criado com HTML + CSS <li>💻 JavaScript. </a>
+      </article>
+      
+      <article onclick="OpenVideoSaver()">
+        <h3>🔗 Video Saver</h3>
+        <p>Ferramenta que permite salvar vídeos do YouTube de forma simples e com foco em produtividade pessoal.</p>
+        <a>
+          <li>👩‍💻 React + Tailwind</li> 
+          <li>💻 TypeScript.</li> 
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Informações Extras -->
+  <aside id="extras">
+    <h2>Mais sobre mim</h2>
+    <ul>
+      <li>📚 Gosto de ler livros de ficção e tecnologia</li>
+      <li>🎮 Apaixonado por jogos como Zelda: Breath of the Wild</li>
+      <li>💻 Meu GitHub: <a href="https://github.com/MatheusDDChs" target="_blank">/MatheusDDChs</a></li>
+      <li>📸 Instagram: <a href="https://www.instagram.com/math_eusdiedrichs/" target="_blank">@math_eusdiedrichs</a></li>
+      <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/matheus-diedrichs-451b23206/" target="_blank">/Matheus-Diedrichs</a></li>
+    </ul>
+  </aside>
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    <p style="margin-right: 48px;">📧 E-mail: matheusdiedrichs72@email.com</p>
+    <p>&copy; 2025 Matheus Diedrichs</p>
+  </footer>
+
+</body>
+</html>
+<script>
+
+  function ProjectOpenClients() {
+    return (open("https://matheusddchs.github.io/PDF-Generator/"))
+  }
+
+  function  OpenBeProject() {
+    return (open("https://matheusddchs.github.io/beproject/"))
+  }
+
+  function  OpenVideoSaver() {
+    return (open("https://video-saver.com.br"))
+  }
+</script>
