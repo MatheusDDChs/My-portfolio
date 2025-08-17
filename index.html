@@ -13,11 +13,11 @@
 <body>
 
   <!-- Cabeçalho -->
-  <header class="header">
+  <header class="header ">
 
     <img class="header__logo"  src="public/Matheus-Dark.png" alt="Foto de Matheus" class="header__logo" />
 
-    <h1>Matheus Diedrichs</h1>
+    <h1 id="typewriter">Matheus Diedrichs_</h1>
     <p>Transformando ideias em soluções digitais</p>
     
     <!-- Menu de Navegação -->
@@ -27,7 +27,6 @@
         <li><a class="nav__a" href="#habilidades">Habilidades</a></li>
         <li><a class="nav__a" href="#projetos">Projetos</a></li>
         <li><a class="nav__a" href="#contato">Contato</a></li>
-        <li><a class="nav__a" href="#extras">Extras</a></li>
       </ul>
     </nav>
   </header>
@@ -112,6 +111,41 @@
 </body>
 </html>
 <script>
+      //TYPE_EFFECT
+    const el = document.getElementById("typewriter");
+    const texts = ["Matheus Diedrichs", "Desenvolvedor Web", "Criador de Projetos"];
+    let i = 0;       // posição dentro do texto atual
+    let j = 0;       // qual texto da lista
+    let isDeleting = false;
+
+    function typeEffect() {
+      let current = texts[j];
+      let displayed = current.substring(0, i);
+      el.textContent = displayed;
+
+      if (!isDeleting && i < current.length) {
+        i++;
+        setTimeout(typeEffect, 120); // digitando
+      } else if (isDeleting && i > 0) {
+        i--;
+        setTimeout(typeEffect, 60); // apagando mais rápido
+      } else {
+        if (!isDeleting) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1500); // espera antes de apagar
+        } else {
+          isDeleting = false;
+          j = (j + 1) % texts.length;
+          setTimeout(typeEffect, 500); // espera antes de escrever o próximo
+        }
+      }
+    }
+
+    typeEffect();
+
+
+    //TYPE_EFFECT
+
 
   function ProjectOpenClients() {
     return (open("https://matheusddchs.github.io/PDF-Generator/"))
